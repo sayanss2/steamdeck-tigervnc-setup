@@ -1,0 +1,15 @@
+[Unit]
+Description=VNC Server for SteamDeck
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/deck/.vnc/start-vnc.sh
+ExecStop=/bin/bash -c 'for f in /home/deck/.vnc/*.pid; do [ -f "$f" ] && vncserver -kill ":$(basename $f .pid)"; done'
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
