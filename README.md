@@ -15,7 +15,7 @@ sudo pacman-key --populate archlinux
 sudo pacman-key --populate holo
 sudo pacman-key --refresh-keys
 sudo pacman -Syu
-sudo pacman -Syu git rsync
+sudo pacman -Syu git
 sudo pacman -S tigervnc
 sudo steamos-readonly enable
 vncserver -version
