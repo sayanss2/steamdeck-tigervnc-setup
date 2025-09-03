@@ -13,7 +13,8 @@ sudo pacman -Scc
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman-key --populate holo
-sudo pacman-key --refresh-keys
+sudo timeout 60s pacman-key --keyserver hkps://keyserver.ubuntu.com --refresh-keys 2>/dev/null || echo "Обновление ключей завершено с ошибками, продолжаем"
+
 sudo pacman -Syu
 sudo pacman -Syu git
 sudo pacman -S tigervnc
