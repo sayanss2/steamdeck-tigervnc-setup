@@ -29,8 +29,6 @@ sudo steamos-readonly enable
 vncpasswd
 ```
 
-Файл пароля: `~/.vnc/passwd`.
-
 ---
 
 ## Шаг 1.2. Клонирование репозитория
