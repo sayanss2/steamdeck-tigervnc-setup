@@ -19,7 +19,6 @@ sudo pacman -Syu
 sudo pacman -Syu git
 sudo pacman -S tigervnc
 sudo steamos-readonly enable
-vncserver -version
 ```
 
 ---
