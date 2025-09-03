@@ -33,6 +33,26 @@ vncpasswd
 
 ---
 
+## Шаг 1.2. Клонирование репозитория
+
+Сначала клонируем репозиторий с готовыми скриптами и systemd unit:
+
+```bash
+# HTTPS
+git clone https://github.com/sayanss2/steamdeck-tigervnc-setup.git
+
+# или SSH
+git clone git@github.com:sayanss2/steamdeck-tigervnc-setup.git
+```
+
+Перейдите в каталог репозитория:
+
+```bash
+cd steamdeck-tigervnc-setup
+```
+
+---
+
 ## ⚙️ Шаг 2. Создание скрипта запуска VNC
 
 ## Файлы в этом репо
